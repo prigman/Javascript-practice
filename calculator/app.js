@@ -43,11 +43,14 @@ btnPlus.onclick = function() {
 	sum = calculate('+')
 }
 btnMinus.onclick = function() {
-	sum = calculate('else')
+	sum = calculate('-')
 }
 
 function calculate(action) {
 	const number_1_value = Number(input_1.value)
 	const number_2_value = Number(input_2.value)
-	return action == '+' ? number_1_value + number_2_value : number_1_value - number_2_value
+	if(action == '+')
+		return number_1_value + number_2_value
+	else if(action == '-')
+		return number_1_value - number_2_value
 }
