@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Car slider 🚘</h1>
+	<div class="slider">
+		<button class="slider-btn" id="prev" onclick="clickButton(-1)">&#10094</button>
+		<div class="slides">
+			<img class="slider-img active" src="img/car-1.png" alt="Car-1">
+			<img class="slider-img" src="img/car-2.png" alt="Car-2">
+			<img class="slider-img" src="img/car-3.png" alt="Car-3">
+			<img class="slider-img" src="img/car-4.png" alt="Car-4">
+		</div>
+		<button class="slider-btn" id="next" onclick="clickButton(1)">&#10095</button>
+	</div>
+</body>
+<script src="index.js"></script>
+</html>
