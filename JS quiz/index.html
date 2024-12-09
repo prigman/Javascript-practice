@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-over-modal-bad quiz-over">
+        <div class="content">
+            <h1>Bad result!</h1>
+            <p>You're an inexperienced web programmer</p>  
+						<p>answered 
+                <span id="correct-answer-bad"></span> out of 
+                <span id="number-of-all-questions-3"></span> questions
+            </p>
+            <button id="btn-try-again-bad">Try again</button>
+        </div>
+    </div>
+
+    <div class="quiz-over-modal quiz-over">
+        <div class="content">
+            <h1>Good result!</h1>
+            <p>answered 
+                <span id="correct-answer"></span> out of
+                <span id="number-of-all-questions-2"></span> questions
+            </p>
+            <button id="btn-try-again">Try again</button>
+        </div>
+    </div>
+
+
+    <div class="quiz-container">
+        <div class="question-number">
+            <h3>Question 
+                <span id="number-of-question"></span>
+                out of
+                <span id="number-of-all-questions"></span>
+            </h3>
+        </div>
+        <div id="question"></div>
+        <div class="options">
+            <div data-id="0" class="option option1"></div>
+            <div data-id="1" class="option option2"></div>
+            <div data-id="2" class="option option3"></div>
+            <div data-id="3" class="option option4"></div>
+        </div>
+        <div class="button">
+            <button id="btn-next">Next</button>
+        </div>
+        <div id="answers-tracker">
+            
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
