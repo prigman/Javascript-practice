@@ -29,7 +29,7 @@ const listsObjectArray = [
 function render() {
 	listElement.innerHTML = '' // очистка перед созданием
 	if(listsObjectArray.length === 0)
-		listElement.innerHTML = '<p>Нет заметок</p>'
+		listElement.innerHTML = '<p>Create notes!</p>'
 	for(let i = 0; i < listsObjectArray.length; i++)
 	{
 		listElement.insertAdjacentHTML('beforeend', getListTemplate(listsObjectArray[i], i)) 
