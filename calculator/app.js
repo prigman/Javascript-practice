@@ -5,7 +5,7 @@ const btnSubmit = document.getElementById('submit')
 const btnPlus = document.getElementById('plus')
 const btnMinus = document.getElementById('minus')
 
-let sum = "Выберите сложение или вычитание"
+let sum = "Choose addition or subtraction"
 
 //console.log(resultElement)
 
@@ -27,17 +27,6 @@ btnSubmit.onclick = function() {
 		resultElement.style.color = 'dark'
 	resultElement.textContent = sum
 }
-
-// первый вариант калькулятора
-
-// btnPlus.onclick = function() {
-// 	sum = Number(input_1.value) + Number(input_2.value)
-// }
-// btnMinus.onclick = function() {
-// 	sum = Number(input_1.value) - Number(input_2.value)
-// }
-
-// второй вариант через вызов функции
 
 btnPlus.onclick = function() {
 	sum = calculate('+')
